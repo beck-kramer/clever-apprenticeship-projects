@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Coding Journal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Coding Reflection Journal</h1>
+  </header>
+
+  <section id="entry-form">
+    <h2>Log a New Entry</h2>
+    <form id="journal-form">
+      <label>Date: <input type="date" id="date" required /></label><br/>
+      <label>What did you work on?<br/>
+        <textarea id="work" required></textarea>
+      </label><br/>
+      <label>What did you learn?<br/>
+        <textarea id="learned" required></textarea>
+      </label><br/>
+      <label>Mood:
+        <select id="mood">
+          <option value="😊">😊</option>
+          <option value="😐">😐</option>
+          <option value="😕">😕</option>
+          <option value="😎">😎</option>
+        </select>
+      </label><br/>
+      <button type="submit">Save Entry</button>
+    </form>
+  </section>
+
+  <section id="entries">
+    <h2>Past Entries</h2>
+    <div id="journal-entries"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
